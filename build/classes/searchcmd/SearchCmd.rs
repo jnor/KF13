@@ -1,2 +1,0 @@
-SearchCmd
-HTMLlist
