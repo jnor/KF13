@@ -2,7 +2,7 @@
    Written by Rune Hansen
    Updated by Alexandre Buisse <abui@itu.dk>
 */
-
+package searchcmd;
 import java.io.*;
 
 class HTMLlist {
