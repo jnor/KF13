@@ -50,3 +50,6 @@ public class SearchCmd {
         }
     }
 }
+
+
+// Test comment by thomas
