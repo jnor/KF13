@@ -1,0 +1,6 @@
+Assignment 2 description
+
+    Modify SearchCmd so that if the user requests a search for a particular word (say, “Hans”), 
+    the URLs of all pages where the word “Hans” occurs are written to the screen. 
+    This has to be done by changing the search method in SearchCmd. 
+    It is not done by changing the data structure.
