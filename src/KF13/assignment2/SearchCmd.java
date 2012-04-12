@@ -7,22 +7,11 @@ package KF13.assignment2;
 
 import java.io.*;
 
-class HTMLlist {
-    String str;
-    HTMLlist next;
-
-    HTMLlist (String s, HTMLlist n) {
-        str = s;
-        next = n;
-    }
-}
-
-
-
 public class SearchCmd {
 
     public static void main(String[] args) throws IOException {
         String name;
+        
 
         // Check that a filename has been given as argument
         if (args.length != 1) {
@@ -32,7 +21,10 @@ public class SearchCmd {
 
         // Read the file and create the linked list
         HTMLlist l = Searcher.readHtmlList (args[0]);
-
+        
+        //test
+        Searcher.search(l, "hv");
+        
         // Ask for a word to search
         BufferedReader inuser =
             new BufferedReader (new InputStreamReader (System.in));
@@ -45,7 +37,7 @@ public class SearchCmd {
             if (name == null || name.length() == 0) {
                 quit = true;
             } else if (Searcher.exists (l, name)) {
-                System.out.println ("The word \""+name+"\" has been found.");
+                System.out.println ("The word \""+name+"\" has been found on page(s).");
             } else {
                 System.out.println ("The word \""+name+"\" has NOT been found.");
             }
