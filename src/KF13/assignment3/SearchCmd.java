@@ -1,4 +1,4 @@
-package KF13.assignment2;
+package KF13.assignment3;
 
 /* SearchCmd.java
    Written by Rune Hansen
@@ -34,7 +34,7 @@ public class SearchCmd {
             if (name == null || name.length() == 0) {
                 quit = true;
             } else if (Searcher.exists (l, name)) {
-                Searcher.search(l, name);
+                System.out.println(Searcher.search(l, name));
             } else {
                 System.out.println ("The word \""+name+"\" has NOT been found.");
             }            
