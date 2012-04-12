@@ -1,0 +1,13 @@
+Assignment 3 description
+
+    Modify the construction of the data structure in such a way that a linked list of pairs 
+    of strings and urls is created. This linked list consists of objects containing three fields. 
+    The three fields are str, next and urls. The fields str and next are like in SearchCmd, but 
+    we will now only use the str field to store words (i.e. not urls) and each word only occurs once. 
+    In case an object contains the word “Hans” in the field str, the object’s urls field will be a 
+    pointer to a list of URLs of all pages that contain the word “Hans”. A list of URLs consists of 
+    objects with two fields; next and url.
+    The field next is a pointer to the next object in the list and the field url is (a pointer to) a URL. 
+    After construction of this data structure, you have to program the corresponding search procedure(s). 
+    The data structure created in this assignment has smaller size than the structure from SearchCmd and is 
+    faster to search through.
