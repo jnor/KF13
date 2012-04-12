@@ -12,10 +12,23 @@ public class HTMLlist {
     
     String str;
     HTMLlist next;
+    
+    
 
     HTMLlist (String s, HTMLlist n) {
         str = s;
         next = n;
+        
+    }
+    
+    
+    public int size() {
+      String lala;
+        while (next != null) {
+           //lala = HTMLlist.next;
+        }      
+      
+    return 0;
     }
     
 }

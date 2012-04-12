@@ -20,15 +20,17 @@ class Searcher {
     temp.AddString(so);        
 */        
         HTMLlist temp = l;
+        String page;
+        LinkList pageList;
      
         //CustomList searchResults = new CustomList();
-        
             while(temp.next != null) {
-                    
                 if(temp.str.startsWith("*PAGE:")) {
-                //You got a PAGE OBJECT!
-                    temp = l.next;
-                    System.out.println("temp is: " + temp);
+                    //You got a PAGE OBJECT!
+                    //temp.add = temp.str;
+                    pageList.insert(23, 23);
+                 
+                    System.out.println(temp.str);
                     System.exit(0);
 
                 }
@@ -40,6 +42,8 @@ class Searcher {
 
         return null;
     }    
+    
+    
     
     public static boolean exists (HTMLlist l, String word) {
         while (l != null) {
