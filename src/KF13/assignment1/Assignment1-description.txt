@@ -1,0 +1,2 @@
+Assignment 1 description
+    Compile and run the program SearchCmd.
