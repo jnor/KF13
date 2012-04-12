@@ -22,9 +22,6 @@ public class SearchCmd {
         // Read the file and create the linked list
         HTMLlist l = Searcher.readHtmlList (args[0]);
         
-        //test
-        Searcher.search(l, "hv");
-        
         // Ask for a word to search
         BufferedReader inuser =
             new BufferedReader (new InputStreamReader (System.in));
@@ -33,14 +30,14 @@ public class SearchCmd {
         boolean quit = false;
         while (!quit) {
             System.out.print ("Search for: ");
-            name = inuser.readLine(); // Read a line from the terminal
+            name = inuser.readLine(); // Read a line from the terminal      
             if (name == null || name.length() == 0) {
                 quit = true;
             } else if (Searcher.exists (l, name)) {
-                System.out.println ("The word \""+name+"\" has been found on page(s).");
+                System.out.println(Searcher.search(l, name));
             } else {
                 System.out.println ("The word \""+name+"\" has NOT been found.");
-            }
+            }            
         }
     }
 }

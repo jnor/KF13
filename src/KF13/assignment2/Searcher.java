@@ -7,43 +7,22 @@ import java.io.IOException;
 
 class Searcher {
     
-    public static HTMLlist search (HTMLlist l, String word) {
+    public static String search (HTMLlist l, String word) {  
         
-/*   
-    PageObject temp;
-    for(int i =0; i < htmllist.lenght; i++)
-    if(htmllist[i].str.equals("*PAGE:"))
-    temp = new PageObject(bla bla);
-    PageList.AddPage(temp);
-    else
-    StringObject so = new StringObject(blabla);
-    temp.AddString(so);        
-*/        
-        HTMLlist temp = l;
-        String page;
-        LinkList pageList;
-     
-        //CustomList searchResults = new CustomList();
-            while(temp.next != null) {
-                if(temp.str.startsWith("*PAGE:")) {
-                    //You got a PAGE OBJECT!
-                    //temp.add = temp.str;
-                    pageList.insert(23, 23);
-                 
-                    System.out.println(temp.str);
-                    System.exit(0);
-
-                }
-                else {
-                //You got another object.. something
-                }
-                
+        String page = "";
+        
+        while(l != null) {     
+            if(l.str.startsWith("*PAGE:")) {
+              //You got a PAGE OBJECT!
+              page = l.str;
             }
-
-        return null;
+            if (l.str.equals(word)) {
+              System.out.println('"' + word + '"' + " found on page: " + page);
+            }
+            l = l.next;
+        }         
+        return "End of file";
     }    
-    
-    
     
     public static boolean exists (HTMLlist l, String word) {
         while (l != null) {
