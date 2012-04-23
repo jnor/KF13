@@ -1,5 +1,8 @@
 *PAGE:http://www.it-c.dk/Internet
 Aktuelt
+Aktuelt
+Aktuelt
+Aktuelt
 på
 IT
 højskolen
@@ -201,6 +204,7 @@ c
 dk
 *PAGE:http://www.it-c.dk/Internet/jobs
 Stillinger
+dupa
 på
 IT
 højskolen
@@ -1326,6 +1330,7 @@ largest
 Open
 Source
 initiative
+test
 LinuxLab
 dk
 is
@@ -1426,6 +1431,7 @@ Projects
 this
 list
 is
+test
 incomplete
 Research
 Projects
@@ -1485,6 +1491,7 @@ højskolens
 nyhedstjeneste
 Det
 er
+test
 muligt
 automatisk
 at
@@ -1896,6 +1903,7 @@ som
 undervisning
 via
 internettet
+test
 Alle
 studerende
 under

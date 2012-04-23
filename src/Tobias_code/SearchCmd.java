@@ -28,6 +28,8 @@ class Searcher {
         }
         return false;
     }
+    
+   
 
     public static HTMLlist readHtmlList (String filename) throws IOException {
         String name;
@@ -65,7 +67,10 @@ public class SearchCmd {
 
         // Read the file and create the linked list
         HTMLlist l = Searcher.readHtmlList (args[0]);
-
+       
+        
+        
+        
         // Ask for a word to search
         BufferedReader inuser =
             new BufferedReader (new InputStreamReader (System.in));
