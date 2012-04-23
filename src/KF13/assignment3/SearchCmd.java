@@ -22,7 +22,7 @@ public class SearchCmd {
         }
         
         // Read the file and create the linked list
- System.out.println("hellos");
+ 
         HtmlList l = Searcher.readHtmlList (args[0]);
          /* System.out.println("-----------------------------------");
           while(l !=null)
@@ -48,7 +48,6 @@ public class SearchCmd {
                 HtmlList list = Searcher.exists(l, name);
                 System.out.println ("The word \""+name+"\" has been found.");
                 list.url.showList();
-                
             } else {
                 System.out.println ("The word \""+name+"\" has NOT been found.");
             }

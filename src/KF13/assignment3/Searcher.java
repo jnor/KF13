@@ -22,16 +22,13 @@ class Searcher {
 
     public static HtmlList readHtmlList (String filename) throws IOException {
        
-        String name, word, currentPage;
-        HtmlList start, current, tmp, existing;
+        String  word, currentPage;
+        HtmlList start, current, tmp;
          
-        PageList pageList; 
-
         // Open the file given as argument
         BufferedReader infile = new BufferedReader(new FileReader(filename));
         currentPage = infile.readLine(); //Read the first line
          
-        
         word = infile.readLine(); // Read the next line
         start = new HtmlList (word, null, new PageList());
         current = start;
@@ -49,9 +46,9 @@ class Searcher {
                 {
                     tmp.url.addPage(currentPage);
                 }
-                 System.out.println("Existing word: " + tmp.str);
-                System.out.println("Its linkList: ");
-                tmp.url.showList();
+                // System.out.println("Existing word: " + tmp.str);
+                //System.out.println("Its linkList: ");
+                //tmp.url.showList();
             }
             else
             {
@@ -62,9 +59,9 @@ class Searcher {
                   tmp.url.addPage(currentPage);
                   current.next = tmp;
                   current = tmp;            // Update the linked list
-                 System.out.println("This word exists once: " + tmp.str);
-                System.out.println("Its linkList: ");
-                tmp.url.showList();
+                // System.out.println("This word exists once: " + tmp.str);
+               // System.out.println("Its linkList: ");
+               // tmp.url.showList();
             }
           
             word = infile.readLine(); // Read the next line
