@@ -47,7 +47,7 @@ public class SearchCmd {
             } 
             
             // Print all URLs where the word was found
-            Searcher.whatPage(l, name);
+            Searcher.whatPage(l, name); 
             
         }
     }
