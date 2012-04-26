@@ -18,7 +18,6 @@ class HTMLlist {
 }
 
 
-
 public class SearchCmd {
 
     public static void main(String[] args) throws IOException {
@@ -42,13 +41,14 @@ public class SearchCmd {
         while (!quit) {
             System.out.print ("Search for: ");
             name = inuser.readLine(); // Read a line from the terminal
+            
             if (name == null || name.length() == 0) {
                 quit = true;
-            } else if (Searcher.exists (l, name)) {
-                System.out.println ("The word \""+name+"\" has been found.");
-            } else {
-                System.out.println ("The word \""+name+"\" has NOT been found.");
-            }
+            } 
+            
+            // Print all URLs where the word was found
+            Searcher.whatPage(l, name);
+            
         }
     }
 }
