@@ -38,7 +38,8 @@ class Searcher {
             {
                   currentPage = word;
             }
-            if(Searcher.exists(start, word) != null && !word.startsWith("*PAGE"))
+            
+            if(exists(start, word) != null && !word.startsWith("*PAGE")) //får liste og ord, tjekker om ordet er der
             {
                 tmp = Searcher.exists(start, word);
                
